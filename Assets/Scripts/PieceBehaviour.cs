@@ -99,7 +99,7 @@ public class PieceBehaviour : MonoBehaviour
                 Debug.Log(triangles[i].GetComponent<TriangleBehaviour>().canBePlaced());
                 triangles[i].GetComponent<TriangleBehaviour>().place();
             }
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
         else
         {

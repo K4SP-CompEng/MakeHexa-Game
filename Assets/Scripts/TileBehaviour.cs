@@ -35,7 +35,8 @@ public class TileBehaviour : MonoBehaviour
 
     public void InsertTriangle(GameObject triangle)
     {
-        this.triangle = triangle;
+        //this.triangle = triangle;
+        this.triangle = Instantiate(triangle, transform.position, transform.rotation, transform);
     }
     public void DeleteTriangle()
     {
